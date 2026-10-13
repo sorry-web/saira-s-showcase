@@ -12,5 +12,6 @@
 ## Application rules
 - Keep the presentation at `/` with scene data separated from visual components so the single-control experience and presenter scripts stay coherent.
 - Keep all image assets as Vite imports; this bundles portable hashed assets instead of relying on third-party image hosts.
+- Gate the first scene behind Start Presentation and generate its short opening music with browser Web Audio after the click; stop and dispose audio on navigation, page hiding, and unmount to avoid autoplay failures or background playback.
 - Initialize Three.js and GSAP through dynamic imports inside effects, disposing animations and render resources on unmount, so SSR and reduced-motion remain safe.
 - Select Nitro's Vercel preset only when VERCEL is set; preserve the default Lovable deployment target elsewhere.
