@@ -124,6 +124,7 @@ h3 { font-size: 20px; font-weight: 500; line-height: 1.4; }
 .inspectorate > svg { color: var(--gold); }
 .detail-label { display: block; color: var(--muted-foreground); font-size: 9px; font-weight: 600; line-height: 1.6; margin-bottom: 10px; }
 .gold-label { color: var(--gold); }
+.weakness-label { color: oklch(0.72 0.14 25); }
 .accent-label { color: var(--primary); }
 .inspectorate p { color: var(--muted-foreground); font-size: 14px; line-height: 1.8; }
 .inspectorate strong { color: var(--foreground); font-weight: 450; }
