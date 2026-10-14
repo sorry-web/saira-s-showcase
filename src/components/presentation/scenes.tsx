@@ -27,6 +27,7 @@ function ElementScene({ index }: { index: number }) {
     <SceneHeading eyebrow={`THE ${index + 1}${index === 0 ? "ST" : index === 1 ? "ND" : index === 2 ? "RD" : "TH"} ELEMENT · ${element.name.toUpperCase()}`} title={element.label} />
     <div className="element-layout">
       <div className="element-copy">
+        <div className="element-block"><span className="detail-label weakness-label">THE CURRENT WEAKNESS</span><p>{element.weakness}</p></div>
         <div className="element-block"><span className="detail-label">THE CURRENT CONCERN</span><p>{element.concern}</p></div>
         <div className="element-block"><span className="detail-label accent-label">THE INTERVENTION</span><p>{element.action}</p></div>
         <div className="element-block"><span className="detail-label gold-label">THE EXPECTED IMPACT</span><p>{element.impact}</p></div>
